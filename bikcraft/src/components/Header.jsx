@@ -1,26 +1,22 @@
 
 const Header = ({
     children, 
-    corFundo, 
-    corFonte, 
-    altura, 
-    preenchimento,
-    modeloCaixa,
-    justificacao,
-    alinhamento
+    backgroundColor,
+    color,
+    paddingX
 }) => {
 
     const style = `
-        ${corFundo}
-        ${corFonte}
-        ${altura}
-        ${preenchimento}
-        ${modeloCaixa}
-        ${justificacao}
-        ${alinhamento}
+        ${backgroundColor}
+        ${color}
+        ${paddingX}
     `;
 
-    return <header className={style}>{children}</header>;
-}
+    return (
+        <>
+         <header className={style}>{children}</header>;
+        </>
+    );
+};
 
 export default Header;

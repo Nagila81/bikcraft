@@ -1,6 +1,10 @@
 
 const Item = ({children}) => {
-    return <li>{children}</li>;
+    return (
+        <>
+            <li>{children}</li>
+        </>
+    );
 };
 
 export default Item;

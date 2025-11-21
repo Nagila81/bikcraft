@@ -1,25 +1,34 @@
 
 const Link = ({
-        texto, 
-        referencia,
-        tamanhoFonte,
-        pesoFonte,
-        caixaFonte,
-        espacamento,
-        sobreFonte,
-        transicao
+        link,
+        texto,
+        fontSize,
+        fontWeight,
+        fontCase,
+        letterSpace,
+        houver,
+        transition 
     }) => {
 
         const style = `
-            ${tamanhoFonte}
-            ${pesoFonte}
-            ${caixaFonte}
-            ${espacamento}
-            ${sobreFonte}
-            ${transicao}
+            ${fontSize}
+            ${fontWeight}
+            ${fontCase}
+            ${letterSpace}
+            ${houver}
+            ${transition}
         `;
 
-    return <a className={style} href={referencia}>{texto}</a>;
+    return (
+        <>
+            <a 
+                className={style} 
+                href={link}
+            >
+                {texto}
+            </a>
+        </>
+    );
 };
 
 export default Link;

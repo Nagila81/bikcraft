@@ -1,13 +1,13 @@
 
 const List = ({
         children, 
-        modeloCaixa,
-        distanciamento
+        display,
+        gap
     }) => {
 
     const style = `
-        ${modeloCaixa}
-        ${distanciamento}
+        ${display}
+        ${gap}
     `;
 
     return <ul className={style}>{children}</ul>;
